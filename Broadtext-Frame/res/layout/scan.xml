@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <SurfaceView
+            android:id="@+id/preview_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center" />
+
+        <com.bt.code.util.view.ViewfinderView
+            android:id="@+id/viewfinder_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@android:color/transparent" />
+
+        <TextView
+            android:id="@+id/txtResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp" />
+
+        <CheckBox
+            android:id="@+id/cbox_light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:button="@drawable/bt_lighting_click"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:padding="@dimen/activity_horizontal_margin" />
+
+        <Button android:text="返回"
+            android:id="@+id/bt_back"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/cbox_light"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+             />
+    </RelativeLayout>
+
+</FrameLayout>

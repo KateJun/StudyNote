@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bt"
+    android:installLocation="preferExternal"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="20" />
+
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <!-- 接受开机广播权限-->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+
+    <application
+        android:name="com.bt.listview.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.bt.listview.MainActivity"
+            android:launchMode="singleTask"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+               
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.bt.listview.clickaddmore.ListViewDownloadActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.bt.listview.grouplist.drag.DragListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.bt.listview.pullrefresh.XListViewActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.bt.listview.multipleitem.MultipleItemsList"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.bt.listview.scroll.ScollAndListview"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.bt.listview.tv_edt_bt.ItemVarietyList"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.bt.viewpager.FragmentTabs"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.bt.viewpager.FragmentTabsPager"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.bt.viewflipper.ViewFlipperActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.bt.viewpager.LoaderThrottleSupport"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.bt.volley.VolleyTest"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.bt.volley.JsonRequestAcitivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.bt.listview.myexpandable.QQExpandableListMain"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.bt.viewpager.FragmentCommunicate"
+            android:theme="@style/CustomTheme" >
+        </activity>
+        <activity
+            android:name="com.bt.wheelview.WheelViewTest"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.bt.zoomimage.ZoomAndCircleImageTest"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.bt.photo.PicChooseActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.bt.album.AlbumBuketActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.bt.album.ImageGridActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.bt.album.PublishedActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.bt.album.PhotoActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.bt.code.util.CaptureActivity"
+            android:clearTaskOnLaunch="true"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:stateNotNeeded="true"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        
+        <activity
+            android:name="com.zbar.lib.CaptureActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.bt.code.util.QRActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.bt.listview.azlist.ListWithSideBarActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+      
+        <activity android:name="com.bt.listview.waterlist.WaterfallListViewActivity" >
+        </activity>
+        <activity android:name="com.bt.residemenu.MenuActivity" >
+        </activity>
+        
+        <activity
+            android:name="com.bt.service.BroadcastActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.bt.slidingmenu.SlidingMenuActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.bt.zipfile.util.FileZipActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.bt.progressbar.VerticalViewActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.bt.qqlogin.QQLoginActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+         <activity android:name="uk.co.senab.photoview.sample.LauncherActivity"    android:screenOrientation="portrait" >
+             
+        </activity>
+        <activity android:name="uk.co.senab.photoview.sample.SimpleSampleActivity"   android:screenOrientation="portrait" />
+        <activity android:name="uk.co.senab.photoview.sample.ViewPagerActivity"  android:screenOrientation="portrait"  />
+        <activity android:name="uk.co.senab.photoview.sample.RotationSampleActivity"  android:screenOrientation="portrait"  />
+        
+        <!-- QQ第三方登录 -->
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent101096184" />
+            </intent-filter>
+        </activity>
+        
+        <!-- 监听开机广播  android:process=":remote"进程被终止也能触发（跨进程收发广播）-->
+        <receiver android:name="com.bt.service.BootBroadcastReciver" android:process=":remote"
+             android:enabled="true" android:exported="true">
+            <intent-filter android:priority="1000" >
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                 <action android:name="com.bt.broadcast"/>
+                 <category android:name="android.intent.category.HOME" /> 
+            </intent-filter>
+        </receiver>
+        <service android:name="com.bt.service.UpdateDataService"  android:process=":remote">
+        </service>
+        
+        <!-- 软件更新， 通知栏下载 -->
+        <service android:name="com.bt.service.UpdateService"  android:process=":remote">
+        </service>
+    </application>
+
+</manifest>
